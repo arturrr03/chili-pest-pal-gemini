@@ -28,6 +28,30 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				chili: {
+					50: '#fff5f5',
+					100: '#ffe6e6',
+					200: '#ffc2c2',
+					300: '#ff9999',
+					400: '#ff4d4d',
+					500: '#ff0000',
+					600: '#e60000',
+					700: '#cc0000',
+					800: '#990000',
+					900: '#660000',
+				},
+				leaf: {
+					50: '#f0faf0',
+					100: '#d8f3d8',
+					200: '#b3e6b3',
+					300: '#8dd98d',
+					400: '#66cc66',
+					500: '#4caf4c',
+					600: '#339933',
+					700: '#297a29',
+					800: '#1f5c1f',
+					900: '#153d15',
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
