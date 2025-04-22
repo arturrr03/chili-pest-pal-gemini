@@ -1,7 +1,7 @@
 
 // Gemini API integration for Chili Pest Identifier
 const API_KEY = "AIzaSyBDRTKdgBkadnzm4WzwbXmZh7nHbUUmB90";
-const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-2:generateContent";
+const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent";
 
 export interface GeminiResponse {
   text: string;

@@ -17,7 +17,7 @@ const Index = () => {
         <ChiliPestIdentifier />
         
         <footer className="text-center mt-16 text-sm text-gray-500">
-          <p>© 2024 Chili Pest Pal - Powered by Gemini Flash 2.0</p>
+          <p>© 2024 Chili Pest Pal - Powered by Gemini 1.5 Flash</p>
         </footer>
       </div>
     </div>
