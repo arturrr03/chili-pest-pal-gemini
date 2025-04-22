@@ -86,6 +86,7 @@ export async function getChatResponse(message: string): Promise<string> {
               {
                 text: `Pertanyaan tentang hama tanaman cabai: ${message}. 
                 Berikan respons dalam bahasa Indonesia yang informatif dan bermanfaat.
+                Jangan menggunakan simbol bintang (*) dalam jawaban.
                 Jika pertanyaannya tidak terkait dengan hama tanaman cabai, beri tahu pengguna bahwa kamu adalah asisten khusus untuk identifikasi dan informasi hama tanaman cabai.`
               }
             ]
@@ -106,9 +107,12 @@ export async function getChatResponse(message: string): Promise<string> {
       throw new Error(data.error.message || "Error calling Gemini API");
     }
 
-    return data.candidates[0].content.parts[0].text;
+    // Remove any asterisks from the response
+    const responseText = data.candidates[0].content.parts[0].text.replace(/\*/g, '');
+
+    return responseText;
   } catch (error) {
     console.error("Error getting chat response:", error);
     return "Maaf, terjadi kesalahan saat memproses pertanyaan Anda. Silakan coba lagi.";
   }
-}
+};
