@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -99,7 +98,7 @@ const ChiliPestIdentifier: React.FC = () => {
           timestamp: new Date()
         },
         {
-          message: result.text,
+          message: result.text.replace(/\*/g, ''), // Remove asterisks from the analysis result
           isUser: false,
           timestamp: new Date()
         }
